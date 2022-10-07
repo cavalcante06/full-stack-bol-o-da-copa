@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
 
-    font-family: 'Cairo', sans-serif;
-    
+font-family: 'cairo'sans-serif;
+
 }
