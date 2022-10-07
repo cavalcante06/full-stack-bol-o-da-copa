@@ -1,4 +1,4 @@
-function app () {
+export function Home () {
 
 
   return (
@@ -31,5 +31,3 @@ function app () {
     </div>
   )
 }
-
-export default app
