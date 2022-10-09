@@ -8,6 +8,7 @@ import {
   import { Login }  from './Login'
   import { Signup }  from './Signup'
   import { Dashboard }  from './Dashboard'
+  import { Profile } from "./Dashboard/Profile"
 
   const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ import {
     {
       path: "/Dashboard",
       element: <Dashboard />,
+    },
+    {
+      path: "/Profile",
+      element: <Profile />,
     },
    
   ]);
