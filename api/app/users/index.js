@@ -16,6 +16,7 @@ const prisma = new PrismaClient()
                 ctx.body = user 
                 ctx.status = 201 
             } catch (error)  {
+                    console.log(error)
                     ctx.body = error 
                     ctx.status = 500            
             }  
@@ -23,19 +24,20 @@ const prisma = new PrismaClient()
             export const list = async ctx => {
 
                 const users = await prisma.user.findAll()
-                try {
-                    const users = await prisma.user.create.findAll()
+       
+
+                    const users = await prisma.user.findMany()
+
                     ctx.body = users 
                     ctx.status = 200
                 } catch (error)  {
+                        console.log(error)
                         ctx.body = error 
                         ctx.status = 500            
                 }  
-                
-
-
+        
             }
 
-        
+            
       
     
