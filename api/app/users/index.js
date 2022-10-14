@@ -22,9 +22,12 @@ const prisma = new PrismaClient()
             }  
     }
             export const list = async ctx => {
-                
-                try {
+
+                const users = await prisma.user.findAll()
+       
+
                     const users = await prisma.user.findMany()
+
                     ctx.body = users 
                     ctx.status = 200
                 } catch (error)  {
