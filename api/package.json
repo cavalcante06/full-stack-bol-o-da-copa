@@ -7,6 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+  "prisma": {
+   "seed": "node prisma/seed.js"
+  },
+  
   "author": {
     "name": "Cesar Cavalcante",
     "email": "cesarsansungwin@gmail.com"
@@ -14,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@koa/router": "^12.0.0",
+    "@prisma/client": "^4.4.0",
     "koa": "^2.13.4"
   },
   "devDependencies": {
