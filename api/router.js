@@ -1,4 +1,4 @@
-import Router from '@koa/router'
+import Router from '@Koa/router'
 
 import  * as users from './app/users/index.js'
 
