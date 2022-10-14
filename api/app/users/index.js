@@ -23,6 +23,8 @@ const prisma = new PrismaClient()
     }
             export const list = async ctx => {
                 
+                console.log(ctx.request.body)       
+
                 try {
                     const users = await prisma.user.findMany()
                     ctx.body = users 
